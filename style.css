@@ -14,45 +14,56 @@ html, body, h1, h2, h3, p, li {
 }
 
 body {
-  background: white;
   font-family: Helvetica, Arial, sans-serif;
-  padding: 40px;
+  height: 100%;
+  background-color: #586058;
 }
 
-ul {
-  list-style-type: none;
+#root {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  align-content: center;
+
 }
 
-li {
-  margin: 20px 0;
-  font-size: 18px;
-  line-height: 21px;
-  position: relative;
+h2 {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 126px;
+  font-size: 36px;
+  line-height: 47px;
+  color: #fff;
 }
 
-li::before {
-  content: '';
-  width: 13px;
-  height: 13px;
-  background-color: #1071FF;
-  border-radius: 50%;
-  display: inline-block;
-  margin-right: 10px;
-  position: absolute;
-  top: 50%;
-  left: -20px;
-  transform: translate(0, -50%);
+.giraffe {
+  text-align: center;
 }
 
-li b {
-  display: block;
+.animal:last-of-type {
+  margin-right: 0;
 }
 
-li i {
-  font-size: 10px;
-  display: block;
-  color: #7B7B7B;
-  font-style: italic;
-  line-height: 0;
-  margin-top: 8px;
+.icon {
+  font-size: 120px;
+  margin-bottom: 22px;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+}
+
+.info h3 {
+  font-size: 24px;
+  line-height: 31px;
+}
+
+.info span {
+  font-size: 14px;
+  line-height: 16px;
+  color: #B8BFB8;
+  margin-top: 4px;
 }

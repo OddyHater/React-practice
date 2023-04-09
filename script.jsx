@@ -1,19 +1,20 @@
-// Компонент User
-function User(props) {
+function Animal(props) {
   return (
-    <p>
-      <img src={`https://code.s3.yandex.net/web-code/react/${props.id}.png`} width="75" />
-      <br /><b>{props.name}</b>
-    </p>
+    <div className="animal">
+      <div className="icon">{props.icon}</div>
+      <div className="info">
+        <h3>{props.name}</h3>
+        <span>Рост: {props.height}</span>
+      </div>
+    </div>
   );
 }
 
-// Основной код приложения
 ReactDOM.render((
   <>
-    <h2>Мои воображаемые друзья:</h2>
-    <User id="1" name="Gregory" />
-    <User id="2" name="James" />
-    <User id="3" name="Allison" />
+    <h2>Африка</h2>
+    <Animal name='Жираф' icon='🦒' height='4 метра' />
+    <Animal name='Ёж' icon='🦔' height='15 сантиметров' />
+    <Animal name='Скунс' icon='🦨' height='никто не мерял' />
   </>
 ), document.querySelector('#root'));
