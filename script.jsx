@@ -18,3 +18,5 @@ ReactDOM.render((
     <Animal name='Скунс' icon='🦨' height='никто не мерял' />
   </>
 ), document.querySelector('#root'));
+
+
