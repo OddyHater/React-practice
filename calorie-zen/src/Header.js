@@ -1,19 +1,15 @@
-import React from 'react';
-import './Header.css';
-function Header(props) {
-    const [color, setColor] = React.useState(`${props.color}`);
-
-    const handleColor = () => {
-        setColor('purple');
+function Animal(type, phrase) {
+    this.type = type;
+    this.phrase = phrase;
+    
+    function say() {
+        return `${type} says ${phrase}`;
     }
-
-    return (
-        <div className='header' style={{
-            backgroundColor: `${color}`
-        }}>
-            <button onClick={handleColor}>Жмякни</button>
-        </div>
-    )
-}
-
-export default Header
+  }
+  
+  const fox = new Animal('fox', 'woopwoopwoop');
+  const tRex = new Animal('T-rex', 'ЯAWR');
+  
+  fox.say(); // fox says woopwoopwoop
+  tRex.say(); // T-rex says ЯAWR
+  
