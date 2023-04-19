@@ -1,0 +1,30 @@
+.MyInfo {
+  max-width: 625px;
+  margin: 0 auto;
+  border-radius: 24px;
+  background-color: rgb(113, 243, 243);
+  padding: 16px 32px;
+}
+
+.MyInfo__title {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 1.2;
+  margin: 0;
+  margin-bottom: 12px;
+  text-align: center;
+}
+
+.MyInfo__subtitle {
+  margin: 0;
+  margin-bottom: 16px;
+  text-align: center;
+}
+
+.MyInfo__list {
+
+}
+
+.MyInfo__list-item {
+
+}
