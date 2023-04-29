@@ -1,4 +1,5 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 
 function Header() {
   return (
@@ -14,6 +15,7 @@ function Header() {
       >
         Learn React
       </a>
+      <NavLink to="/blog">Blog</NavLink>
     </header>
   )
 }
