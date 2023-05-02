@@ -1,6 +1,7 @@
 import React from "react";
 import { useState, useEffect, useContext } from "react";
 import { PopularFilmsContext } from "../../contexts/PopularFilmsContext/PopularFilmsContext";
+import FilmCard from "../FilmCard/FilmCard";
 
 function Main() {
 
@@ -12,8 +13,8 @@ function Main() {
         <section className="popular">
           <h2 className="popular">Популярные фильмы:</h2>
           <ul className="popular__list">
-            {results?.length > 0 && results.map((film) => {
-              return <li key={film.id}>{film.title}</li>
+            {results?.length > 0 && results.map((film) => {              
+              return <FilmCard key={film.id} image={film.poster_path} title={film.title} description={film.overview} id={film.id}/>
             })}
           </ul>
         </section>

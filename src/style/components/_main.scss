@@ -1,0 +1,21 @@
+.content {
+
+  // .content__wrapper
+
+  &__wrapper {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 16px;
+  }
+}
+
+.popular {
+
+  // .popular__list
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 12px;
+  }
+}
