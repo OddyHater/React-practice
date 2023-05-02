@@ -1,0 +1,27 @@
+.header {
+  margin: 0 auto;
+  margin-bottom: 48px;
+
+  // .header__nav
+
+  &__nav {
+    border-bottom: 2px $secondary solid;
+  }
+
+  // .header__menu
+
+  &__menu {
+    min-height: 64px;
+    padding: 0px 32px;
+    display: flex;
+    align-items: center;
+    gap: 32px;
+  }
+
+  // .header__menu-item
+
+  &__menu-item {
+
+  }
+  
+}
