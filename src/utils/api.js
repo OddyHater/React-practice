@@ -3,7 +3,7 @@ class Api {
     this._token = token;
   }
 
-  getPopular() {
+  getPopularFilms() {
     return fetch(`https://api.themoviedb.org/3/movie/top_rated?api_key=${this._token}`)
       .then((res) => {
         return res.json();
@@ -12,11 +12,20 @@ class Api {
   }
 
   getImage(imagePath) {
-    return fetch(`https://image.tmdb.org/t/p/w500/${imagePath}`)
-      .then((res) => {
+    return fetch(`https://image.tmdb.org/t/p/w350/${imagePath}`)
+      .then((res) => {        
         return res;
       })
   }
+
+  getPopularShows() {
+    return fetch(`https://api.themoviedb.org/3/tv/popular?api_key=${this._token}&language=en-US&page=1`)
+      .then((res) => {
+        return res.json();
+      })
+      .catch((err) => console.log(err));
+  }
+  
 }
 
 const AppApi = new Api('241eb29c4fba66739a5a38c31c90fe96');

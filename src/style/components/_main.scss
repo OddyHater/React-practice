@@ -20,8 +20,10 @@
   // .popular__list
 
   &__list {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 12px;
+    display: flex;
+    grid-gap: 18px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    overscroll-behavior: contain;
   }
 }

@@ -1,3 +1,3 @@
 import { createContext } from "react";
 
-export const PopularFilmsContext = createContext([]);
+export const PopularFilmsContext = createContext();
