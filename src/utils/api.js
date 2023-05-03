@@ -13,7 +13,7 @@ class Api {
 
   getImage(imagePath) {
     return fetch(`https://image.tmdb.org/t/p/w500/${imagePath}`)
-      .then((res) => {        
+      .then((res) => {
         return res;
       })
   }

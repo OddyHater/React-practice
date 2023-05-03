@@ -11,9 +11,9 @@ function Main() {
     <main className="content">
       <div className="content__wrapper">
         <section className="popular">
-          <h2 className="popular">Популярные фильмы:</h2>
+          <h2 className="popular__title">Популярные фильмы:</h2>
           <ul className="popular__list">
-            {results?.length > 0 && results.map((film) => {              
+            {results?.length > 0 && results.map((film) => {
               return <FilmCard key={film.id} image={film.poster_path} title={film.title} description={film.overview} id={film.id}/>
             })}
           </ul>

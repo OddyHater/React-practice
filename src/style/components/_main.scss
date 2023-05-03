@@ -11,6 +11,12 @@
 
 .popular {
 
+  &__title{
+    color: $secondary;
+    font-size: 32px;
+    font-weight: 700;
+  }
+
   // .popular__list
 
   &__list {
