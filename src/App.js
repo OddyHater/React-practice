@@ -18,8 +18,7 @@ function App() {
 
   useEffect(() => {
     AppApi.getPopularFilms()
-      .then((res) => {
-        console.log(res);
+      .then((res) => {        
         setPopularFilms(res);
       })
       .catch((err) => console.log(err));
@@ -30,7 +29,7 @@ function App() {
       .then((res) => {
         setPopularShows(res);
       })
-  })
+  }, [])
 
   return(
    <PopularFilmsContext.Provider value={popularFilms}>

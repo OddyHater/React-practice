@@ -15,21 +15,18 @@ function FilmPage() {
         console.log(res);
         setFilminfo(res);
       })
-  }, []);
-
-  useEffect(() => {
-    AppApi.getImage(filmInfo.poster_path)
-      .then((res) => {
-        console.log(res);
-        setFilmImage(res);
+      .then(() => {
+        AppApi.getImage(filmInfo.poster_path)
+          .then((res) => {
+            setFilmImage(res);
+          })
       })
-      .catch((err) => console.log(err))
-  }, [filmInfo]);
+  }, []);
   
   return(
    <>
     <p>{filmId.id}</p>
-    <img src={filmInfo && filmImage.url} alt="saxsf" />
+    <img src={filmInfo && filmImage.url} alt={filmInfo && filmInfo.title} />
    </>
   )
 }
